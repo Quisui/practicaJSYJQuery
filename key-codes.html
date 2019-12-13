@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /*  
+        keydown: boton en el teclado a sido presionado  
+        keypress: cuando se se hace click en un caracter escape key codes 
+        keyup: cuando ya no se esta presionando 
+        key down y up: usan codigos de key para representar las diferentes letras 
+        */
+       function chechKeyPress(key){
+           if(key.keyCode == "65"){
+               alert("the 'a' letterr key has been pressed!");
+           }
+       }
+        window.addEventListener("keypress", chechKeyPress, false);
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>
