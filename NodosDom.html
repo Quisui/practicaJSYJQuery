@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container text-justify">
+        <div class="row">
+            <h1 id="titulo"> titulo del sitio web </h1>
+            <p id="subtitulo"></p>
+
+            <p>Lorem ipsum dolor, <b> sit amet </b> consectetur adipisicing elit. Minima aut enim culpa earum cupiditate
+                consequuntur perspiciatis corrupti iste pariatur officiis.</p> <br>
+
+            <p id="segundo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error cupiditate optio
+                debitis
+                voluptas odit voluptatem dolores placeat aspernatur ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia velit corrupti ipsam architecto
+                molestiae inventore magnam at distinctio. Culpa totam magnam cum sapiente exercitationem provident
+                adipisci ad amet dolore ut.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        var elementosP = $("p");
+        var segunoParrafo = $("#segundo");
+
+        // 1- crear el elemento
+        var elemento = $('<h2>')
+            .attr('id', 'parrafo')
+            .attr('align', 'right')
+            .html('Lorem ipsum')
+            .appendTo('#subtitulo');
+        // 2- Crear un nodo del texto
+        //var contenido = $(text("Este es el titular"));
+        // 3- Añadir el nodo del texto al elemento
+        //elemento.appendChild(contenido);
+        // 4- agregar atributos al elemento
+        //elemento.setAttribute("align", "center");
+        // 5- Agregar el elemento al documento
+        //$("#subtitulo").appendChild(elemento);
+
+
+    </script>
+</body>
+
+</html>
